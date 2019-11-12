@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="James Nguyen" />
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Bookmark Landing Page</title>
   </head>
   <body>
@@ -16,14 +20,33 @@
           alt="Website logo"
           class="header-img"
         />
-        <img src="dist/img/icon-hamburger.svg" alt="" class="menu-btn" />
+        <div class="menu">
+          <img
+            src="dist/img/icon-hamburger.svg"
+            alt="Hamburger Icon"
+            class="menu-btn"
+          />
+        </div>
+
+        <nav>
+          <ul class="mobile-hide desktop-show">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button>LOGIN</button></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <!-- Intro -->
     <section id="intro">
       <div class="container">
-        <img src="dist/img/illustration-hero.svg" alt="intro img" />
+        <img
+          class="intro-img"
+          src="dist/img/illustration-hero.svg"
+          alt="intro img"
+        />
         <h1>
           A Simple Bookmark Manager
         </h1>
@@ -31,8 +54,8 @@
           A clean and simple interface to organise your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <button>Get it on Chrome</button>
-        <button>Get it on FireFox</button>
+        <button class="btn-1">Get it on Chrome</button>
+        <button class="btn-2">Get it on FireFox</button>
       </div>
     </section>
 
@@ -45,13 +68,13 @@
           websites. Your bookmakrs sync between your devices so you can access
           them on the go.
         </p>
-        <ul>
-          <li class="active">Simple Bookmarking</li>
-          <li>Speedy Searchinng</li>
-          <li>Easy Sharing</li>
+        <ul class="feature-ul">
+          <li><a class="active" href="#">Simple Bookmarking</a></li>
+          <li><a href="#">Speedy Searching</a></li>
+          <li><a href="#">Easy Sharing</a></li>
         </ul>
 
-        <div class="tabs">
+        <div id="tab-1" class="tabs">
           <img
             src="dist/img/illustration-features-tab-1.svg"
             alt="Features tab 1 image"
@@ -64,7 +87,7 @@
           </p>
         </div>
 
-        <div class="tabs">
+        <div id="tab-2" class="tabs">
           <img
             src="dist/img/illustration-features-tab-2.svg"
             alt="Features tab 2 image"
@@ -77,7 +100,7 @@
           <button>More Info</button>
         </div>
 
-        <div class="tabs">
+        <div id="tab-3" class="tabs">
           <img
             src="dist/img/illustration-features-tab-3.svg"
             alt="Features tab 3 image"
@@ -102,7 +125,11 @@
         </p>
 
         <div class="downloads">
-          <img src="dist/img/logo-chrome.svg" alt="Chrome logo image" />
+          <img
+            class="logo"
+            src="dist/img/logo-chrome.svg"
+            alt="Chrome logo image"
+          />
           <h4>Add to Chrome</h4>
           <p>Minimum version 62</p>
           <img src="dist//img/bg-dots.svg" alt="border dots" />
@@ -110,15 +137,23 @@
         </div>
 
         <div class="downloads">
-          <img src="dist/img/logo-firefox.svg" alt="Firefox Logo Image" />
-          <h4>Add to Chrome</h4>
-          <p></p>
+          <img
+            class="logo"
+            src="dist/img/logo-firefox.svg"
+            alt="Firefox Logo Image"
+          />
+          <h4>Add to Firefox</h4>
+          <p>Minimum version 55</p>
           <img src="dist/img/bg-dots.svg" alt="Border dots" />
           <button>Add & Install Extension</button>
         </div>
 
         <div class="downloads">
-          <img src="dist/img/logo-opera.svg" alt="Opera logo image" />
+          <img
+            class="logo"
+            src="dist/img/logo-opera.svg"
+            alt="Opera logo image"
+          />
           <h4>Add to Opera</h4>
           <p>Minimum version 46</p>
           <img src="dist/img/bg-dots.svg" alt="border dots" />
@@ -135,20 +170,40 @@
           Here are some of our FAQs. If you have any other questions you'd like
           answered please feel free to email us.
         </p>
-        <ul>
-          <li>What is Bookmark?</li>
+
+        <ul class="faq-ul">
+          <li>
+            What is Bookmark?
+            <img class="arrow" src="dist/img/icon-arrow.svg" alt="arrow icon" />
+          </li>
+
           <div class="content">
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris aurgue massa, ultricies non ligula. Suspesndisse imperdiet.
           </div>
-          <li>How can I request a browser?</li>
+
+          <li>
+            How can I request a browser?
+            <img class="arrow" src="dist/img/icon-arrow.svg" alt="arrow icon" />
+          </li>
+
           <div class="content">
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris aurgue massa, ultricies non ligula. Suspesndisse imperdiet.
           </div>
-          <li>Is there a mobile app?</li>
+
+          <li>
+            Is there a mobile app?
+            <img class="arrow" src="dist/img/icon-arrow.svg" alt="arrow icon" />
+          </li>
+
           <div class="content">
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris aurgue massa, ultricies non ligula. Suspesndisse imperdiet.
           </div>
-          <li>What about other Chromium browsers?</li>
+
+          <li>
+            What about other Chromium browsers?
+            <img class="arrow" src="dist/img/icon-arrow.svg" alt="arrow icon" />
+          </li>
+
           <div class="content">
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris aurgue massa, ultricies non ligula. Suspesndisse imperdiet.
           </div>
@@ -161,7 +216,7 @@
     <!-- CTA -->
     <section id="cta">
       <div class="container">
-        <h4>35,000+ Already Joined</h4>
+        <p>35,000+ Already Joined</p>
         <h2>Stay up-to-date with what we're doing</h2>
         <form action="#">
           <input type="email" id="email" />
@@ -173,8 +228,12 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <img src="dist/img/logo-bookmark.svg" alt="bookmark website logo" />
-        <ul>
+        <img
+          class="footer-logo"
+          src="dist/img/logo-bookmark.svg"
+          alt="bookmark website logo"
+        />
+        <ul class="footer-ul">
           <li>Features</li>
           <li>Pricing</li>
           <li>Contact</li>
