@@ -28,8 +28,69 @@ header {
   padding: 2.5rem 2rem 0rem;
 }
 
-.mobile-hide {
+.overlay {
+  background: hsl(229, 31%, 21%);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
   display: none;
+}
+
+.mobile-hide {
+  list-style: none;
+  padding: 5.5rem 0 0 0;
+}
+
+.overlay-logo {
+  /* background: white; */
+  float: left;
+  padding: 2.3rem 0 0 1.9rem;
+}
+
+.close-btn {
+  padding: 2.7rem 2.1rem 0 0;
+  float: right;
+}
+
+nav ul li {
+  padding: 1.3rem;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav ul li:nth-child(1) {
+  border-top: 1px solid rgb(165, 165, 165);
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+nav button {
+  display: block;
+  margin: 1.5rem auto;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  width: 85%;
+  height: 50px;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.nav-icon {
+  margin-top: 12.5rem;
+  padding: 0 1rem 0;
 }
 
 .menu {
