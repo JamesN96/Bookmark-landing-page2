@@ -12,6 +12,7 @@ const div3 = document.getElementById("tab-3");
 const a1 = document.getElementById("a1");
 const a2 = document.getElementById("a2");
 const a3 = document.getElementById("a3");
+const arrows = document.querySelectorAll(".arrow");
 
 // Event Listener
 
@@ -20,6 +21,9 @@ closeBtn.addEventListener("click", openMenu);
 tab1.addEventListener("click", displayTab);
 tab2.addEventListener("click", displayTab);
 tab3.addEventListener("click", displayTab);
+arrows.forEach(function(arrow) {
+  arrow.addEventListener("click", showDiv);
+});
 
 // openMenu function
 
@@ -55,5 +59,15 @@ function displayTab(e) {
     a3.classList.add("active");
     a2.className = "";
     a1.className = "";
+  }
+}
+
+//  showDiv function
+
+function showDiv(e) {
+  if (e.target.parentNode.nextElementSibling.style.display === "") {
+    e.target.parentNode.nextElementSibling.style.display = "block";
+  } else {
+    e.target.parentNode.nextElementSibling.style.display = "";
   }
 }
