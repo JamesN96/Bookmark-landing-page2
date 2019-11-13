@@ -213,7 +213,6 @@ nav button {
 }
 
 #tab-2 {
-  /* top: -481px; */
   top: 1330px;
 }
 
@@ -227,7 +226,6 @@ nav button {
   margin: 0 auto;
 }
 #tab-3 {
-  /* top: -1023px; */
   top: 1330px;
 }
 
@@ -301,10 +299,18 @@ nav button {
 
 .arrow {
   float: right;
+  cursor: pointer;
 }
 
 .content {
   display: none;
+  overflow: hidden;
+  word-break: break-word;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: hsl(229, 8%, 60%);
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+  padding: 2rem 0;
 }
 
 #faq button:hover {
