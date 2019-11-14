@@ -22,6 +22,10 @@ p {
   font-size: 0.9rem;
 }
 
+button {
+  outline: none;
+}
+
 .more-info {
   height: 45px;
   width: 110px;
@@ -52,13 +56,12 @@ header {
   display: none;
 }
 
-.mobile-hide {
+.header-ul {
   list-style: none;
   padding: 5.5rem 0 0 0;
 }
 
 .overlay-logo {
-  /* background: white; */
   float: left;
   padding: 2.3rem 0 0 1.9rem;
 }
@@ -86,6 +89,10 @@ nav ul li a {
   color: #fff;
 }
 
+nav ul li a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
 nav button {
   display: block;
   margin: 1.5rem auto;
@@ -98,6 +105,7 @@ nav button {
   font-size: 1.1rem;
   letter-spacing: 3px;
   font-weight: bold;
+  outline: none;
 }
 
 .nav-icon {
@@ -198,6 +206,10 @@ nav button {
   cursor: pointer;
 }
 
+.feature-ul li a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
 .feature-ul li.active {
   border-bottom: 3px solid hsl(0, 94%, 66%);
 }
@@ -249,6 +261,13 @@ nav button {
   color: #fff;
   font-size: 0.9rem;
   margin: 1.3rem 0;
+}
+
+.downloads button:hover {
+  background: white;
+  border: 2px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  font-weight: bold;
 }
 
 /* FAQ */
@@ -354,6 +373,13 @@ input:invalid {
   color: #fff;
 }
 
+#cta button:hover {
+  background: white;
+  border: 2px solid hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+  font-weight: bold;
+}
+
 /* Footer */
 
 footer {
@@ -377,11 +403,17 @@ footer .footer-ul li {
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+
+footer .footer-ul li:hover {
+  color: hsl(0, 94%, 66%);
 }
 
 .footer-icon {
   margin: 2rem 0 0 0;
   padding: 0 1rem;
+  cursor: pointer;
 }
 
 /* Media Query  */
@@ -437,7 +469,7 @@ footer .footer-ul li {
     display: none;
   }
 
-  .mobile-hide {
+  .header-ul {
     padding: 0;
     width: 100%;
     margin: 0;
@@ -471,6 +503,13 @@ footer .footer-ul li {
     letter-spacing: 1.5px;
     display: inline;
     margin: 0 0 0 1rem;
+  }
+
+  nav ul button:hover {
+    background: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    font-weight: bold;
   }
 
   .nav-icon {
