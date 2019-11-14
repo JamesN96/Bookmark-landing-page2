@@ -373,14 +373,15 @@ footer .footer-ul {
 }
 
 footer .footer-ul li {
-  padding: 0.9rem 0;
+  padding: 1rem 0;
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 2px;
 }
 
-footer img {
-  padding: 0 1rem 0;
+.footer-icon {
+  margin: 2rem 0 0 0;
+  padding: 0 1rem;
 }
 
 /* Media Query  */
@@ -399,10 +400,6 @@ footer img {
 }
 
 @media only screen and (min-width: 1025px) {
-  .container {
-    width: 80%;
-  }
-
   p {
     width: 50%;
     margin: 0 auto;
@@ -520,14 +517,13 @@ footer img {
 
   .feature-ul li {
     display: inline;
-    padding: 0rem 2.5rem;
+    padding: 0rem 2.5rem 1rem;
     border: none;
     width: 33%;
   }
 
   .feature-ul li:nth-child(1) {
-    border: none;
-    padding-left: 0;
+    border-top: none;
   }
 
   .feature-ul li a {
@@ -537,6 +533,22 @@ footer img {
 
   .tab1-img {
     width: 55%;
+    float: left;
+  }
+
+  .tab1-h2,
+  .tab1-p {
+    float: left;
+    text-align: left;
+    margin-left: 3.5rem;
+  }
+
+  .tab1-h2 {
+    margin-top: 6rem;
+  }
+
+  .tab1-p {
+    width: 38%;
   }
 
   /* Download */
@@ -623,7 +635,8 @@ footer img {
     margin-top: 0.4rem;
   }
 
-  .footer-ul li img {
+  .footer-icon {
+    margin: 0rem;
     float: right;
   }
 }
@@ -660,7 +673,7 @@ footer img {
   }
 
   .feature-ul li {
-    padding-right: 1.5rem;
+    padding-right: 2rem;
   }
 
   .feature-ul li a {
@@ -668,7 +681,14 @@ footer img {
   }
 
   .tab1-img {
-    width: 40%;
+    width: 45%;
+    margin-left: 5rem;
+  }
+
+  .tab1-h2,
+  .tab1-p {
+    margin-left: 8rem;
+    width: 31%;
   }
 
   /* Download */
@@ -713,6 +733,11 @@ footer img {
     font-size: 1rem;
   }
 
+  nav ul button {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
   /* Intro */
 
   #intro h1 {
@@ -721,8 +746,25 @@ footer img {
     width: 30%;
   }
 
+  /* Features */
+
+  .feature-ul li {
+    padding-right: 3.6rem;
+  }
+
+  .feature-ul li a {
+    font-size: 1.2rem;
+  }
+
   .tab1-img {
-    width: 30%;
+    width: 35%;
+    margin-left: 14rem;
+  }
+
+  .tab1-h2,
+  .tab1-p {
+    margin-left: 5rem;
+    width: 31%;
   }
 
   /* downloads */
